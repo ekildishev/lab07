@@ -1,3 +1,4 @@
+set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 include(InstallRequiredSystemLibraries)
 set(CPACK_PACKAGE_CONTACT ekildisev@gmail.com)
 set(CPACK_PACKEGE_VERSION_MAJOR ${PRINT_VERSION_MAJOR})
@@ -17,7 +18,7 @@ set(CPACK_RPM_PACKAGE_RELEASE 1)
 set(CPACK_DEBIAN_PACKAGE_NAME "libprint-dev")
 set(CPACK_DEBIAN_PACKAGE_PREDEPENDNDS "cmake >= 3.0")
 set(CPACK_DEBIAN_PACKAGE_RELEASE 1)
+set(PRINT_VERSION_STRING "v${PRINT_VERSION}")
 
 include(CPack)
 
-include(CPackConfig.cmake)
